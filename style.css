@@ -6,7 +6,7 @@
 
 .add {
   width: 400px;
-  background-color: black;
+  background-color: crimson;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
@@ -27,9 +27,7 @@
   margin: 10px 0px;
   border-bottom: 1px solid white;
   padding: 5px;
-}
-.add input:nth-child(1) {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .add input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.498);
@@ -54,7 +52,7 @@
 
 #demo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-flow: row nowrap;
   padding: 40px 0px;
 }
@@ -63,6 +61,7 @@
   background: teal;
   color: white;
   text-align: center;
+  font-size: 12px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -70,4 +69,19 @@
   width: 250px;
   height: 350px;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .add {
+    width: 300px;
+  }
+  #demo .box {
+    width: 200px;
+    color: white;
+    text-align: center;
+  }
+  #demo .box img {
+    width: 150px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */
