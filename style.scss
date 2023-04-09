@@ -26,9 +26,12 @@
         margin: 10px 0px;
         border-bottom: 1px solid white;
         padding: 5px;
-        text-transform: capitalize;
+        
         &::placeholder{
             color: rgba(255, 255, 255, 0.498);
+            text-transform: capitalize;
+        }
+        &:nth-child(1) {
             text-transform: capitalize;
         }
     }
